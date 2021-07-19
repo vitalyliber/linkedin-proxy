@@ -28,7 +28,7 @@ export default function Home() {
           onChange={(e) => setLink(e.target.value)}
         />
         <button onClick={() => {
-          window.open(`/proxy/${link}`,'_blank');
+          window.open(link.replace('https://linkedin.com', ''),'_blank');
         }} className={styles.button} disabled={link === ''} >Open via proxy</button>
       </main>
 
