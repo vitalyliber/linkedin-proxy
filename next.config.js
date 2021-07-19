@@ -3,7 +3,7 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: ':path*',
+        source: '/:path*',
         destination: 'https://www.linkedin.com/:path*',
       },
     ]
